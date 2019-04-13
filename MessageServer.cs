@@ -11,7 +11,7 @@ namespace ChatClient
     {
         public List<String> GetMessages()
         {
-            var client = new RestClient("https://localhost:44319");
+            var client = new RestClient("https://10.90.1.172:5001");
             var request = new RestRequest("/api/Message");
             var response = client.Execute<List<String>>(request);
             return response.Data;
@@ -19,7 +19,7 @@ namespace ChatClient
 
         public void SendMessage(string message)
         {
-            var client = new RestClient("https://localhost:44319");
+            var client = new RestClient("https://10.90.1.172:5001");
             var request = new RestRequest("/api/Message", Method.POST)
                 .AddJsonBody(message);
             client.Execute(request);
