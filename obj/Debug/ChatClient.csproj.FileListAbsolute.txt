@@ -1,0 +1,13 @@
+C:\Users\Michael\source\repos\ChatClient\bin\Debug\ChatClient.exe.config
+C:\Users\Michael\source\repos\ChatClient\bin\Debug\ChatClient.exe
+C:\Users\Michael\source\repos\ChatClient\bin\Debug\ChatClient.pdb
+C:\Users\Michael\source\repos\ChatClient\obj\Debug\ChatClient.csprojAssemblyReference.cache
+C:\Users\Michael\source\repos\ChatClient\obj\Debug\ChatClient.Form1.resources
+C:\Users\Michael\source\repos\ChatClient\obj\Debug\ChatClient.Properties.Resources.resources
+C:\Users\Michael\source\repos\ChatClient\obj\Debug\ChatClient.csproj.GenerateResource.cache
+C:\Users\Michael\source\repos\ChatClient\obj\Debug\ChatClient.csproj.CoreCompileInputs.cache
+C:\Users\Michael\source\repos\ChatClient\obj\Debug\ChatClient.exe
+C:\Users\Michael\source\repos\ChatClient\obj\Debug\ChatClient.pdb
+C:\Users\Michael\source\repos\ChatClient\bin\Debug\RestSharp.dll
+C:\Users\Michael\source\repos\ChatClient\bin\Debug\RestSharp.xml
+C:\Users\Michael\source\repos\ChatClient\obj\Debug\ChatClient.csproj.CopyComplete
