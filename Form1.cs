@@ -19,20 +19,31 @@ namespace ChatClient
         {
             InitializeComponent();
             ServicePointManager
-    .ServerCertificateValidationCallback +=
-    (sender, cert, chain, sslPolicyErrors) => true;
+            .ServerCertificateValidationCallback +=
+                (sender, cert, chain, sslPolicyErrors) => true;
             server = new MessageServer();
             poller = new Timer();
             UpdateMessageList();
             poller.Interval = 1000;
             poller.Tick += (s, e) => UpdateMessageList();
             poller.Start();
+
+            textBoxMessage.KeyPress += (s, e) =>
+            {
+                if (e.KeyChar == (char)Keys.Return)
+                {
+                    var text = textBoxMessage.Text;
+                    server.SendMessage(text);
+                    textBoxMessage.Text = "";
+                }
+            };
         }
 
         private void ButtonSend_Click(object sender, EventArgs e)
         {
             var text = textBoxMessage.Text;
             server.SendMessage(text);
+            textBoxMessage.Text = "";
         }
 
         private void UpdateMessageList()
